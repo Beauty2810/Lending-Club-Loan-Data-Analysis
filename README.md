@@ -24,7 +24,7 @@ This plot identifies the distributions of loan interest rate records within the 
 
 Here is a simple count plot for loan grades within the dataset. The most popular grades are B and C. A-graded loans come third. There are few F and G graded loans, probably for the best. However it is important to notice that B and C graded loans occur more often than top rated 'A' loans.
 
-## Data Preprocessing
+# Data Preprocessing
 
 - Discarding all the columns containing more than 25% null values of the total data
 - Imputing null values with suitable feature values
@@ -34,6 +34,22 @@ Here is a simple count plot for loan grades within the dataset. The most popular
 - Scaling the features for fast convergence of the model
 - Spliting the data into training and testing 
 
-## About Model 
+# About Model 
 
-We trained a 4-layer Neural Network using Keras having total Trainable params: 23,271. Since, the data was imbalanced, f1_score, precison and recall were taken into consideration for the evaluation of the model. We managed to get f1_score of 99% for the test data.
+We trained a 5-layer Neural Network using Keras having total Trainable params: 194,049. Since, the data was imbalanced, f1_score, precison and recall were taken into consideration for the evaluation of the model. We managed to get f1_score of 99% for the test data.
+
+# Results
+
+Since, the data is highly imbalanced, we can not really rely on the accuracy score. So we have to consider the f1_score, precision and recall. 
+
+## Accuracy - Loss Plots
+<img width="398" alt="image" src="https://user-images.githubusercontent.com/108981162/216885213-4f8b140c-c698-499b-913d-4b05167f75e1.png">
+
+## Classification Report
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/108981162/216888122-9f119e8f-5da6-4387-939a-fc909a2f2553.png">
+
+## ROC Curve
+<img width="408" alt="image" src="https://user-images.githubusercontent.com/108981162/216888193-ec9b71b5-87fa-4f00-b0b3-d3917f44603f.png">
+
+
+
